@@ -14,11 +14,12 @@ const last_posts = posts.slice(0, 3);
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
     <div class="text-5xl font-bold">I'm Heidi Negrete</div>
-    <div class="text-3xl py-3 font-bold">
-      Gameplay Engineer and K-12 CompSci Educator
-    </div>
+    <div class="text-3xl py-3 font-bold">Gameplay Engineer</div>
     <div class="py-2">
-      <text class="text-lg"> This website is under construction.</text>
+      <text class="text-lg"
+        >I also teach what I love and and always seek to learn new things in
+        turn.</text
+      >
     </div>
     <div class="mt-8">
       <a class="btn" href="/cv"> My Resume</a>
@@ -37,33 +38,31 @@ const last_posts = posts.slice(0, 3);
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Richard Smiley - The Gladiator"
+    img="/GLADIATOR.png"
+    desc="2D Survival Arena game where you must survive ever-increasing waves of enemies while collecting experience to power-up and gain new abilities."
+    url="https://github.com/Heidi-Negrete/the-gladiator"
   />
   <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
+  <!-- Any more featured project cards go here -->
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
   </div>
 
-  {
+  <HorizontalCard
+    title="How to deploy a Godot 4 game to Github Pages"
+    img="/githubxgodot.png"
+    desc="Here's a quick guide to publishing an HTML web build of your Godot game directly from the source code hosted in a Github repository!"
+    url="http://angelicgarbage.com/posts/how-to-deploy-a-godot-4-game-to-github-pages/"
+    badge="NEW"
+  />
+  <HorizontalCard
+    title="My Astro Blog"
+    img="/rocket-launch.png"
+    desc="How I whipped up a blog over the weekend using the Astro web framework."
+    url="http://angelicgarbage.com/posts/my-astro-blog/"
+  />
+  <!-- {
     last_posts.map((post) => (
       <>
         <HorizontalCard
@@ -77,5 +76,5 @@ const last_posts = posts.slice(0, 3);
         <div class="divider my-0" />
       </>
     ))
-  }
+  } -->
 </BaseLayout>
