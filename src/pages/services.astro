@@ -1,40 +1,58 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout title="Projects" sideBarActiveItemID="services">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Services Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Services</div>
+  </div>
+  <div>
+    <div class="py-2 mt-5 pb-12">
+      <text class="text-lg"
+        >For the past six years I have shared my passions with others by
+        teaching Computer Science, Math, and Language Arts. Sign up for a group
+        class or private tutoring, or check out some of my free resources!</text
+      >
+    </div>
+  </div>
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-5">Free Resources</div>
   </div>
 
   <HorizontalCard
-    title="Service 1"
+    title="CompSci Curriculum for Ages 6-12"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    badge="NEW"
-    url="#"
+    desc="The resources I have created and collected for use in educating children in Computer Literacy and Computer Science fundamentals, made freely available."
+    url="https://heidi-negrete.github.io/kids-computer-curriculum/"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Service 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Service 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Service 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="My YouTube Channel"
+    img="/angelic-garbage.jpg"
+    desc="I occasionaly upload educational content under the alias 'Angelic Garbage'."
+    url="https://www.youtube.com/@angelicgarbage"
   />
 </BaseLayout>
