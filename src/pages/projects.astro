@@ -5,20 +5,28 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Gamedev Projects</div>
+    <div class="text-3xl w-full font-bold mb-5">Published Projects</div>
   </div>
 
   <HorizontalCard
-    title="Richard Smiley - The Gladiator"
+    title="Richard Smiley the Gladiator"
     img="/gladiator.png"
-    desc="2D Survival Arena game where you must survive ever-increasing waves of enemies while collecting experience to power-up and gain new abilities."
+    desc="I was the solo developer for this 2D Survival Arena game, built using the Godot engine and GDScript."
     url="https://github.com/Heidi-Negrete/the-gladiator"
   />
+
+  <div class="text-3xl w-full font-bold mb-5 mt-10">
+    Projects in Development
+  </div>
+
+  <HorizontalCard title="TBA" img="" desc="A first person shooter." url="#" />
+
   <div class="divider my-0"></div>
+
   <HorizontalCard
     title="Cocoon"
     img="/cocoon.png"
-    desc="An atmospheric RPG where the protagonist journeys through biomes both micro and macro-scopic to realize their full potential."
+    desc="An atmospheric 2D RPG where the protagonist journeys through biomes both micro and macro-scopic to realize their full potential."
     url="https://heidi-negrete.github.io/cocoon/"
   />
 
