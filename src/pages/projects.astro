@@ -5,7 +5,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title="Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Published Projects</div>
+    <div class="text-3xl w-full font-bold mb-5">Published Games</div>
   </div>
 
   <HorizontalCard
@@ -15,11 +15,23 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     url="https://github.com/Heidi-Negrete/the-gladiator"
   />
 
-  <div class="text-3xl w-full font-bold mb-5 mt-10">
-    Projects in Development
-  </div>
+  <div class="text-3xl w-full font-bold mb-5 mt-10">Games in Development</div>
 
-  <HorizontalCard title="TBA" img="" desc="A first person shooter." url="#" />
+  <HorizontalCard
+    title="Spacebox"
+    img="/charm2.jpeg"
+    desc="My first game built in Unreal Engine. Spaceships get invaded by aliens all the time. It's your job to go in and cleanup, with the help of your drone to solve puzzles and only your fists to defend yourself."
+    url="/project/spacebox"
+  />
+
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Erpday Farm"
+    img="/erpdaybunny.png"
+    desc="Erpday Farm is a wacky digital card game where the animals are your friends. Built in Godot Engine."
+    url="https://github.com/Heidi-Negrete/erpday-farm"
+  />
 
   <div class="divider my-0"></div>
 
@@ -38,7 +50,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     title="CompSci Curriculum for Ages 6-12"
     img="/post_img.webp"
     desc="The resources I have created and collected for use in educating children in Computer Literacy and Computer Science fundamentals, made freely available."
-    url="https://heidi-negrete.github.io/kids-computer-curriculum/"
+    url="https://heidi-negrete.github.io/kids-compsci-curriculum/"
   />
   <!-- <div class="divider my-0"></div>
   <HorizontalCard
