@@ -4,59 +4,59 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
 const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Heidi Negrete</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer</div>
-    <div class="py-2">
-      <text class="text-lg"
-        >I also teach what I love and and always seek to learn new things in
-        turn.</text
-      >
-    </div>
-    <div class="mt-8">
-      <a class="btn" href="/cv"> My Resume</a>
-      <a href="/projects" class="btn btn-outline ml-5"> My Projects</a>
-    </div>
-  </div>
+	<div class="pb-12 mt-5">
+		<div class="text-xl py-1">Hey there 👋</div>
+		<div class="text-5xl font-bold">I'm Heidi Negrete</div>
+		<div class="text-3xl py-3 font-bold">Software Engineer</div>
+		<div class="py-2">
+			<text class="text-lg"
+				>I also teach what I love and and always seek to learn new things in
+				turn.</text
+			>
+		</div>
+		<div class="mt-8">
+			<a class="btn" href="/cv"> My Resume</a>
+			<a href="/projects" class="btn btn-outline ml-5"> My Projects</a>
+		</div>
+	</div>
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-2">My Latest Projects {"</>"}</div>
-  </div>
+	<div>
+		<div class="text-3xl w-full font-bold mb-2">My Latest Projects {"</>"}</div>
+	</div>
 
-  <HorizontalCard
-    title="Richard Smiley the Gladiator"
-    img="/gladiator.png"
-    desc="2D Survival Arena game where you must survive ever-increasing waves of enemies while collecting experience to power-up and gain new abilities."
-    url="https://github.com/Heidi-Negrete/the-gladiator"
-  />
-  <div class="divider my-0"></div>
-  <!-- Any more featured project cards go here -->
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from Blog</div>
-  </div>
+	<HorizontalCard
+		title="Richard Smiley the Gladiator"
+		img="/gladiator.png"
+		desc="2D Survival Arena game where you must survive ever-increasing waves of enemies while collecting experience to power-up and gain new abilities."
+		url="https://github.com/Heidi-Negrete/the-gladiator"
+	/>
+	<div class="divider my-0"></div>
+	<!-- Any more featured project cards go here -->
+	<div>
+		<div class="text-3xl w-full font-bold mb-5 mt-10">Latest from Blog</div>
+	</div>
 
-  <HorizontalCard
-    title="How to deploy a Godot 4 game to Github Pages"
-    img="/githubxgodot.png"
-    desc="Here's a quick guide to publishing an HTML web build of your Godot game directly from the source code hosted in a Github repository!"
-    url="http://angelicgarbage.com/posts/how-to-deploy-a-godot-4-game-to-github-pages/"
-    badge="NEW"
-  />
-  <HorizontalCard
-    title="My Astro Blog"
-    img="/rocket-launch.png"
-    desc="How I whipped up a blog over the weekend using the Astro web framework."
-    url="http://angelicgarbage.com/posts/my-astro-blog/"
-  />
-  <!-- {
+	<HorizontalCard
+		title="How to deploy a Godot 4 game to Github Pages"
+		img="/githubxgodot.png"
+		desc="Here's a quick guide to publishing an HTML web build of your Godot game directly from the source code hosted in a Github repository!"
+		url="http://angelicgarbage.com/posts/how-to-deploy-a-godot-4-game-to-github-pages/"
+		badge="NEW"
+	/>
+	<HorizontalCard
+		title="My Astro Blog"
+		img="/rocket-launch.png"
+		desc="How I whipped up a blog over the weekend using the Astro web framework and AWS."
+		url="http://angelicgarbage.com/posts/my-astro-blog/"
+	/>
+	<!-- {
     last_posts.map((post) => (
       <>
         <HorizontalCard
