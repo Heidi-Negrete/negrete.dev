@@ -2,6 +2,7 @@
 title: "Spacebox"
 description: "My first Unreal game. Spaceships get invaded by aliens. It's your job to go in and cleanup, with the help of your drone to solve puzzles and only your fists to defend yourself."
 heroImage: "/charm2.jpeg"
+pubDate: "Dec 1 2023"
 tags: ["Unreal 5"]
 ---
 

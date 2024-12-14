@@ -2,6 +2,7 @@
 title: "Just an Ice Cream Truck"
 description: "Control an ice cream truck on an urgent mission, using an arduino board as an external controller. Built using Arduino Uno, Blender, and Unreal Engine 5."
 heroImage: "/icecreamtruck.png"
+pubDate: "Dec 14 2024"
 tags: ["Unreal 5", "Arduino", "Game"]
 ---
 
