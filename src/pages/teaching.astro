@@ -1,0 +1,132 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+
+const posts = await getCollection("teaching");
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout title="Teaching" sideBarActiveItemID="teaching">
+	<div>
+		<div class="text-3xl w-full font-bold mb-5">Teaching</div>
+	</div>
+	<Image
+		style="margin: 50px auto; border-radius: 50px;"
+		class="mb-6"
+		format="jpg"
+		width={300}
+		height={300}
+		src="/laelacircuit.jpg"
+		alt="Laela completes her first circuit."
+	/>
+	<div class="text-2xl w-full font-bold mb-5">
+		Why I teach STEM & Computer Literacy
+	</div>
+	<div>
+		<div class="py-2 mt-5 pb-12">
+			<text class="text-lg">
+				<div>
+					<p>
+						Children pick up and learn new technologies in a snap. However, the
+						majority of young adults, even after growing up surrounded by modern
+						tech, lack crucial knowledge in digital safety and privacy as well
+						as basic computer literacy skills such as typing and
+						troubleshooting. Knowing how to operate a phone or tablet is NOT
+						enough. According to the National Skills Coalition,
+						<q
+							>while over 92 percent of all jobs require digital skills,
+							approximately one-third of workers don't have the foundational
+							digital skills necessary to qualify for these jobs.</q
+						> Enable your child (grades 6-12) to engage and thrive in a digital world
+						by pursuing education opportunities in these areas. The problem solving
+						and creativity skills they develop will enable them to become not just
+						users, but also creators of computing technology.
+					</p>
+				</div>
+
+				<div class="py-2 mt-5 pb-12">
+					<div class="text-2xl w-full font-bold mb-5">Available Subjects</div>
+					<dl>
+						<dt style="font-weight: bold; margin-top: 5px;">
+							Computer Literacy
+						</dt>
+						<dd>
+							Basic computer usage and care, productivity software i.e.
+							Microsoft Office, Excel, and PowerPoint, typing skills, Internet,
+							privacy and online safety, online communication, and
+							troubleshooting
+						</dd>
+						<dt style="font-weight: bold; margin-top: 5px;">
+							Computer Science Fundamentals
+						</dt>
+						<dd>
+							Algorithms and Programming, Computing Systems, Cybersecurity, Data
+							and Analysis, Impacts of Computing, Networks and the Internet, and
+							AI
+						</dd>
+						<dt style="font-weight: bold; margin-top: 5px;">Programming</dt>
+						<dd>Block-based coding, Python, and JavaScript</dd>
+						<dt style="font-weight: bold; margin-top: 5px;">
+							Robotics, Electronics and Circuitry
+						</dt>
+						<dd>Using Micro:bit, Snap Circuits, and Arduino</dd>
+						<dt style="font-weight: bold; margin-top: 5px;">Web Development</dt>
+						<dd>
+							Internet, Semantics and Accessibility, HTML/CSS/JS, SQL and the
+							backend, APIs
+						</dd>
+						<dt style="font-weight: bold; margin-top: 5px;">
+							Game Development
+						</dt>
+						<dd>Math and logic, 2D/3D space, design, and programming</dd>
+					</dl>
+				</div>
+				<p>
+					Elements of Algebra, Geometry, Trigonometry, Probability and
+					Statistics, and Physics are interwoven with these topics. I adhere to
+					Virginia Department Of Education's Computer Science and Digital
+					Learning standards to provide a rounded offering. I utilize
+					internationally recognized resources along with my own curriculum,
+					while carefully assessing students' skills, weaknesses, and interests
+					to tailor my lessons to their specific needs. I encourage parents and
+					students to work with me in defining individual goals.
+				</p>
+			</text>
+		</div>
+	</div>
+	{
+		last_posts.map((post) => (
+			<>
+				<HorizontalCard
+					title={post.data.title}
+					img={post.data.heroImage}
+					desc={post.data.description}
+					url={"/teaching/" + post.slug}
+					target="_self"
+					badge={post.data.badge}
+				/>
+				<div class="divider my-0" />
+			</>
+		))
+	}
+	<div>
+		<div class="text-3xl w-full font-bold mb-5 mt-5">Free Resources</div>
+	</div>
+
+	<HorizontalCard
+		title="CompSci Curriculum for Ages 6-100"
+		img="/post_img.webp"
+		desc="The education resources I have created and collected for use in Computer Literacy and Computer Science fundamentals, made freely available."
+		url="https://heidi-negrete.github.io/kids-computer-curriculum/"
+	/>
+	<div class="divider my-0"></div>
+	<HorizontalCard
+		title="My YouTube Channel"
+		img="/angelicgarbage.png"
+		desc="I occasionaly upload educational content under the alias 'Angelic Garbage'."
+		url="https://www.youtube.com/@angelicgarbage"
+	/>
+</BaseLayout>
