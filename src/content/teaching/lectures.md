@@ -9,7 +9,7 @@ Contact me if you are interested in presentations or workshops for groups (inclu
 - Internet Safety for Kids
 - Internet Safety for Parents
 - Hour of Code
-- Game Development and Story Telling in Scratch
+- Game Development and Storytelling in Scratch
 - Beginning Game Development in Roblox or Godot
 - Video Editing
 - Math in Games
