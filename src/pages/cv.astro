@@ -4,7 +4,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-	<div class="mb-5">
+	<!-- <div class="mb-5">
 		<div class="text-3xl w-full font-bold">Profile</div>
 	</div>
 
@@ -12,7 +12,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 		Combining my passion for tech and education, I provide children and young
 		adults with the resources to succeed in a world that rewards technical
 		literacy and innovation.
-	</div>
+	</div> -->
 
 	<div class="mb-5">
 		<div class="text-3xl w-full font-bold">Education</div>
@@ -31,21 +31,28 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
 	<div class="time-line-container mb-10">
 		<TimeLineElement
+			title="Private Tutor, STEM"
+			subtitle="From December 2024 to Present, Front Royal VA, USA"
+		>
+			<ul>
+				<li>
+					• Educate and mentor students in key fundamentals of Computer Science
+					& Literacy.
+				</li>
+			</ul>
+		</TimeLineElement>
+		<TimeLineElement
 			title="IT Intern"
 			subtitle="From May 2024 to Present, Front Royal VA, USA"
 		>
 			<ul>
 				<li>
-					• Research and write up deployment plans for the business' custom
-					software solution.
-				</li>
-				<li>• Configure networking and security for multiple Linux VMs.</li>
-				<li>
-					• Deploy the application backend to production using technologies such
-					as Gunicorn, PostgreSQL, NGINX, and Redis.
+					• Research and write up documentation and plans for the deployment of
+					a custom software solution.
 				</li>
 				<li>
-					• Debug Python and React applications with Pair Programming technique.
+					• Configure networking and security. Debug and troubleshoot issues
+					with the application or deployment.
 				</li>
 			</ul>
 		</TimeLineElement>
@@ -157,6 +164,8 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 				href="https://www.credly.com/badges/889298b2-2995-4b6a-b162-a574df3f194b/public_url"
 				>CompTIA Project+</a
 			>
+		</li>
+		<li>
 			<a
 				href="https://www.linkedin.com/feed/update/urn:li:activity:7183778404448509952/"
 				target="_blank">ITIL 4 Foundations</a
@@ -181,23 +190,19 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 	</div>
 
 	<ul class="list-disc">
-		<li>
-			C# .NET (Entity Framework, Winforms, .NET MAUI, xUnit, Moq, Serilog)
-		</li>
+		<li>C# .NET (Entity Framework, Winforms, .NET MAUI)</li>
 		<li>Python (Pydantic, FastAPI)</li>
 		<li>PostgresSQL</li>
 		<li>SQLite</li>
 		<li>Git</li>
 		<li>JavaScript/Typescript</li>
+		<li>React</li>
 		<li>HTML5</li>
 		<li>CSS</li>
 		<li>REST API (Postman)</li>
 		<li>Linux</li>
 		<li>Bash</li>
 		<li>AWS</li>
-		<li>SDLC</li>
-		<li>Data Structures</li>
-		<li>Algorithms</li>
 		<li>Godot (GDScript, C#)</li>
 		<li>Unreal (Blueprints, C++)</li>
 	</ul>
