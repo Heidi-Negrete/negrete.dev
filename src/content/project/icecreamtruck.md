@@ -8,17 +8,31 @@ tags: ["Unreal 5", "Arduino", "Game"]
 
 You must deliver ice cream to your destination before it's too late! You're just a monkey, but it's just an ice cream truck, how hard could it be?
 
-## Gameplay Demos
+I made this vehicle simulation game in Unreal Engine 5 and built a custom game mode that uses an external controller built around an arduino microcontroller.
 
-- Final gameplay with Arduino controller UPLOADING WIP
-- Keyboard & Mouse [Gameplay Demo](https://youtu.be/Zl43jH7CGN8?si=a84laTaDrW_uu66t)
-- Level Design Testing [SHORT](https://www.youtube.com/shorts/Zvw_w7rCciU)
+## Play
+
+<a href="https://angelic-garbage.itch.io/just-an-ice-cream-truck" target="_blank">Download</a> the game from itch.io. In this public release, you play with keyboard & mouse or standard playstation/xbox controller.
+
+## Demo Videos
+
+- <a href="https://youtu.be/Hjc5tV3f0QY?si=WuM0q9pFDS251BYQ" target="_blank">Gameplay Demo</a> using the Arduino game mode and Arduino Controller.
+- Early <a href="https://youtu.be/Zl43jH7CGN8?si=a84laTaDrW_uu66t" target="_blank">Gameplay Demo</a> with keyboard & mouse.
+- Level Design Testing <a href="https://www.youtube.com/shorts/Zvw_w7rCciU" target="_blank">Short</a>.
+
+## Dev Log
+
+Read about the development process in my devlog series:
+
+- <a href="" target="_blank">Requirements, Brainstorming and Planning</a>
+- <a href="" target="_blank">Development</a>
+- <a href="" target="_blank">Release and Post Mortem</a>
 
 ## Software & Technology
 
-- Unreal Engine 5.5 (Blueprints)
-- Blender (3D Modeling)
-- Arduion IDE (Arduino Uno)
+- Unreal Engine 5 (Blueprints)
+- Blender (3D Modeling and Texture Painting)
+- Arduino IDE (Arduino Uno Microcontroller)
 - Figma (Design)
 - Trello (Planning)
 - OBS, Da Vinci Resolve (Recording and Video Editing)
@@ -27,17 +41,10 @@ You must deliver ice cream to your destination before it's too late! You're just
 ## Arduino Controller
 
 ![A game controller made with an arduino uno, wearing googly eyes.](/arlan.jpeg)
-
-The game can be played with keyboard and mouse, however, if you would like to build your own controller it is a great beginner electronic project! Information about the controller and how to build, including the sketch and eletrical diagram can be found on my [github](https://github.com/Heidi-Negrete/arduino-controller-arlan).
-
-## Devlog
-
-I will be updating this section shortly thanks for your patience!
+The published game does not include Arduino Mode, however, if you would like to build your own controller for a game of your own it is a great beginner electronic project! Information about how to build the controller, including the sketch and electrical diagram, and how to integrate it into an Unreal Engine product can be found on my <a href="" target="_blank">how-to blog post</a>.
 
 ## External Resources
 
-- Serial COM Unreal plugin (to simplify communication management between the microcontroller and the game engine)
-
-- Sound effects by [Nox_Sound_Design](https://nox-sound-design.itch.io/essentials-series-sfx-nox-sound), CC0.
-
-- Music is by [Sirental](https://sirental.itch.io/farming-game-music), Creative Commons Attribution v4.0 International.
+- <a href="https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin" target="_blank">SerialCOM</a> Unreal plugin (Simplifies communication management between the microcontroller and the game engine)
+- Sound effects by <a href="https://nox-sound-design.itch.io/essentials-series-sfx-nox-sound" target="_blank">Nox_Sound_Design</a>, CC0.
+- Music is by <a href="https://sirental.itch.io/farming-game-music" target="_blank">Sirental</a>, Creative Commons Attribution v4.0 International.
