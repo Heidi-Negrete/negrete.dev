@@ -3,7 +3,7 @@ title: Academic Assistant App
 description: ""
 heroImage: "/aaapp.png"
 pubDate: "Mar 18 2025"
-tags: ["Mobile Application", ".NET MAUI", "C#"]
+tags: ["Mobile Application", ".NET MAUI", "Csharp"]
 ---
 
 I made this as the capstone project for my Software Engineering degree at WGU.
