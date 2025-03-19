@@ -21,6 +21,6 @@ I teach locally in Front Royal, Virginia. Contact me for more details or remote 
 
 ## About Heidi Negrete
 
-Heidi has 5+ years’ experience teaching both 1 on 1 and in the classroom. She has always been interested in how computers and their programs work and has many fond memories of playing video games or typing up stories on old laptops. She grew serious about pursuing a career in tech during the covid pandemic and enjoys combining her passion for education and tech. Heidi will be graduating with a B.S. in Software Engineering in February. She spends free time with her four-year-old daughter and in various hobbies such as writing, drawing, and game development.
+Heidi has 5+ years’ experience teaching both 1 on 1 and in the classroom and a B.S. in Software Engineering. She has always been interested in how computers and their programs work and has many fond memories of playing video games or typing up stories on old laptops. She grew serious about pursuing a career in tech during the covid pandemic and enjoys combining her passion for education and tech. Heidi spends free time with her four-year-old daughter and in various hobbies such as writing, drawing, and game development.
 
 _"Heidi is absolutely awesome with the kids! She is so encouraging and positive and able to explain everything where the kids really get it!"_ - _Jessica_

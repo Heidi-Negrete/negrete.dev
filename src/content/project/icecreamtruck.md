@@ -24,9 +24,9 @@ I made this vehicle simulation game in Unreal Engine 5 and built a custom game m
 
 Read about the development process in my devlog series:
 
-- <a href="" target="_blank">Requirements, Brainstorming and Planning</a>
-- <a href="" target="_blank">Development</a>
-- <a href="" target="_blank">Release and Post Mortem</a>
+- <a href="https://medium.com/angelic-garbage/just-an-ice-cream-truck-devlog-part-1-ffe53b77d7b6" target="_blank">Requirements, Brainstorming and Planning</a>
+- <a href="" target="_blank">Development</a> (WIP, check back soon.)
+- <a href="" target="_blank">Release and Post Mortem</a> (WIP, check back soon)
 
 ## Software & Technology
 
@@ -41,7 +41,7 @@ Read about the development process in my devlog series:
 ## Arduino Controller
 
 ![A game controller made with an arduino uno, wearing googly eyes.](/arlan.jpeg)
-The published game does not include Arduino Mode, however, if you would like to build your own controller for a game of your own it is a great beginner electronic project! Information about how to build the controller, including the sketch and electrical diagram, and how to integrate it into an Unreal Engine product can be found on my <a href="" target="_blank">how-to blog post</a>.
+The published version of the game does not include Arduino Mode, however, if you would like to build your own controller for a game of your own it is a great beginner electronic project! Information about how to build the controller, including the sketch and electrical diagram, and how to integrate it into an Unreal Engine product can be found on my <a href="" target="_blank">how-to blog post</a>. (WIP, check back soon.)
 
 ## External Resources
 
