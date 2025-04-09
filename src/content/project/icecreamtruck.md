@@ -41,7 +41,7 @@ Read about the development process in my devlog series:
 ## Arduino Controller
 
 ![A game controller made with an arduino uno, wearing googly eyes.](/arlan.jpeg)
-The published version of the game does not include Arduino Mode, however, if you would like to build your own controller for a game of your own it is a great beginner electronic project! Information about how to build the controller, including the sketch and electrical diagram, and how to integrate it into an Unreal Engine product can be found on my <a href="" target="_blank">how-to blog post</a>. (WIP, check back soon.)
+The published version of the game does not include Arduino Mode, however, if you would like to build your own controller for a game of your own it is a great beginner electronic project! Information about how to build the controller, including the sketch and electrical diagram, and how to integrate it into an Unreal Engine product can be found on my <a href="https://medium.com/tech-tutors-tips/build-an-arduino-controller-for-your-unreal-5-game-v1-a9a081fe3990" target="_blank">how-to blog post</a>.
 
 ## External Resources
 

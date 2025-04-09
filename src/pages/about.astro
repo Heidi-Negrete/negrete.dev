@@ -1,0 +1,22 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+---
+
+<BaseLayout title="About" sideBarActiveItemID="about">
+	<div>
+		<div class="text-3xl w-full font-bold mb-5">About</div>
+	</div>
+	<Image
+		style="margin: 50px auto; border-radius: 50px;"
+		class="mb-6"
+		format="jpg"
+		width={300}
+		height={300}
+		src="/heidialtprofile.jpg"
+		alt="Heidi Negrete"
+	/>
+					<p>
+						Heidi has a B.S. in Software Engineering and 5+ years’ experience teaching both 1 on 1 and in the classroom. She has always been interested in how computers and their programs work and has many fond memories of playing video games or typing up stories on old laptops. She grew serious about pursuing a career in tech during the covid pandemic and enjoys combining her passion for education and tech. Heidi spends free time with her four-year-old daughter and in various hobbies such as writing, drawing, and game development.
+					</p>
+</BaseLayout>

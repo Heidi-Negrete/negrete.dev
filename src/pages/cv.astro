@@ -158,7 +158,8 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 		<div class="text-3xl w-full font-bold">Certifications</div>
 	</div>
 
-	<ul class="list-disc mx-6 mb-10 grid gap-2">
+    <div class="time-line-container grid gap-4 mb-10">
+	<ul class="list-disc mx-6 grid gap-2">
 		<li>
 			<a
 				href="https://www.credly.com/badges/889298b2-2995-4b6a-b162-a574df3f194b/public_url"
@@ -184,12 +185,14 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 			>
 		</li>
 	</ul>
+    </div>
 
 	<div class="mb-5">
 		<div class="text-3xl w-full font-bold">Skills</div>
 	</div>
 
-	<ul class="list-disc">
+    <div class="time-line-container grid gap-4 mb-10">
+	<ul class="list-disc mx-6 grid gap-2">
 		<li>C# .NET (Entity Framework, Winforms, .NET MAUI)</li>
 		<li>Python (Pydantic, FastAPI)</li>
 		<li>PostgresSQL</li>
@@ -211,4 +214,17 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 			Canva/Adobe Express)
 		</li>
 	</ul>
+    </div>
+
+    	<div class="mt-5 mb-5">
+		<div class="text-3xl w-full font-bold">Other</div>
+	</div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+		<TimeLineElement
+			title="Society of Women's Engineers"
+			subtitle="Member from August 2024 to Present"
+		>
+			SWE is the world's largest advocate for women in engineering. I stand with all women and girls who are driven to contribute and succeed in this exciting field.
+	</div>
 </BaseLayout>

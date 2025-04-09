@@ -22,14 +22,16 @@ const last_posts = posts.slice(0, 3);
 				>I teach what I love and and always seek to learn new things in turn.</text
 			>
 		</div>
+        
 		<div class="mt-8">
-			<a class="btn" href="/cv"> My Resume</a>
+            <a class="btn" href="/about">About Me</a>
+			<a class="btn ml-5" href="/cv"> My Resume</a>
 			<a href="/projects" class="btn btn-outline ml-5"> My Projects</a>
 		</div>
 	</div>
 
 	<div>
-		<div class="text-3xl w-full font-bold mb-2">My Latest Projects {"</>"}</div>
+		<div class="text-3xl w-full font-bold mb-2">Latest Projects {"</>"}</div>
 	</div>
 
 	<HorizontalCard
@@ -45,7 +47,6 @@ const last_posts = posts.slice(0, 3);
 		img="/aaapp.png"
 		desc="Prototype .NET MAUI mobile application for managing academic progress."
 		url="/project/academicassistant"
-		badge="NEW"
 	/>
 	<div class="divider my-0"></div>
 	<!-- Any more featured project cards go here -->
@@ -53,18 +54,24 @@ const last_posts = posts.slice(0, 3);
 		<div class="text-3xl w-full font-bold mb-5 mt-10">Latest from Blog</div>
 	</div>
 
+    <HorizontalCard
+		title="Build an Arduino Controller for your Unreal 5 Game - v1"
+		img="/arduinocontrollerv1.png"
+		desc="Building your own controller is a great beginner electronics project!"
+		url="https://medium.com/tech-tutors-tips/build-an-arduino-controller-for-your-unreal-5-game-v1-a9a081fe3990"
+		badge="NEW"
+	/>
 	<HorizontalCard
 		title="'Just an Ice Cream Truck' Devlog Part 1"
 		img="/jictdevlogpart1.png"
 		desc="Requirements, Brainstorming, and Planning for the newly released 'Just an Ice Cream Truck' game."
 		url="https://medium.com/angelic-garbage/just-an-ice-cream-truck-devlog-part-1-ffe53b77d7b6"
-		badge="NEW"
 	/>
 	<HorizontalCard
 		title="How to deploy a Godot 4 game to Github Pages"
 		img="/githubxgodot.png"
 		desc="Here's a quick guide to publishing an HTML web build of your Godot game directly from the source code hosted in a Github repository!"
-		url="https://medium.com/angelic-garbage/how-to-deploy-a-godot-4-game-to-github-pages-60c084ed7bf7"
+		url="https://medium.com/tech-tutors-tips/how-to-deploy-a-godot-4-game-to-github-pages-60c084ed7bf7"
 	/>
 	<!-- {
     last_posts.map((post) => (
